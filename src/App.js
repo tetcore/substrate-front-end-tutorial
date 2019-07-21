@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-
 import { ApiPromise, WsProvider } from '@polkadot/api';
+import React, { useState, useEffect } from 'react';
 import { Container, Dimmer, Loader} from 'semantic-ui-react';
+
 import 'semantic-ui-css/semantic.min.css'
 
  export default function App () {
