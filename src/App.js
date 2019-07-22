@@ -6,14 +6,20 @@ import 'semantic-ui-css/semantic.min.css'
 
  export default function App () {
   const [api, setApi] = useState();
+  const [apiReady, setApiReady] = useState();
+  // const WS_PROVIDER = 'ws://127.0.0.1:9944';
+  const WS_PROVIDER = 'ws://dev-node.substrate.dev:9944';
 
-  useEffect (() => {
-    const provider = new WsProvider();
+  useEffect(() => {
+    const provider = new WsProvider(WS_PROVIDER);
 
     ApiPromise.create(provider)
-    .then((api) => setApi(api))
-    .catch((e)=> console.error(e));
-  },[])
+      .then((api) => {
+        setApi(api);
+        api.isReady.then(() => setApiReady(true));
+      })
+      .catch((e) => console.error(e));
+  }, []);
 
   const loader = function (text){
     return (
@@ -23,7 +29,7 @@ import 'semantic-ui-css/semantic.min.css'
     );
   };
   
-  if(!api || !api.isReady){
+  if(!apiReady){
     return loader('Connecting to the blockchain')
   }
 
