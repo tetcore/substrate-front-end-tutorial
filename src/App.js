@@ -1,7 +1,9 @@
 import { ApiPromise, WsProvider } from '@polkadot/api';
+import keyring from '@polkadot/ui-keyring';
 import React, { useState, useEffect } from 'react';
 import { Container, Dimmer, Loader} from 'semantic-ui-react';
 
+import Balances from './Balances';
 import NodeInfo from './NodeInfo';
 import 'semantic-ui-css/semantic.min.css'
 
@@ -22,6 +24,14 @@ import 'semantic-ui-css/semantic.min.css'
       .catch((e) => console.error(e));
   }, []);
 
+  useEffect(() => { 
+    keyring.loadAll({
+      isDevelopment: true
+    });
+  },[]); 
+
+
+
   const loader = function (text){
     return (
       <Dimmer active>
@@ -37,6 +47,10 @@ import 'semantic-ui-css/semantic.min.css'
   return (
     <Container>
       <NodeInfo
+        api={api}
+      />
+      <Balances
+        keyring={keyring}
         api={api}
       />
     </Container>
