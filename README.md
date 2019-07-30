@@ -4,7 +4,7 @@ This repo contains the files obtained at the end of each part from the [dapp tut
 To play with the dapp at any part, you can clone this repo and follow these steps:
 
 ```bash
-# clone this repo
+git clone https://github.com/substrate-developer-hub/basic-dapp.git
 cd ./basic-dapp/<the_part_that_you_wish>;
 yarn;
 yarn start;
