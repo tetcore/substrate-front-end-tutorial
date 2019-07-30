@@ -9,3 +9,5 @@ cd ./basic-dapp/<the_part_that_you_wish>;
 yarn;
 yarn start;
 ```
+
+run `yarn-upgrade-all.sh` to upgrade all the dependancies of each part.
