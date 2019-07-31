@@ -2,7 +2,6 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 import React, { useState, useEffect } from 'react';
 import { Container, Dimmer, Loader} from 'semantic-ui-react';
 
-import NodeInfo from './NodeInfo';
 import 'semantic-ui-css/semantic.min.css'
 
  export default function App () {
@@ -36,9 +35,7 @@ import 'semantic-ui-css/semantic.min.css'
 
   return (
     <Container>
-      <NodeInfo
-        api={api}
-      />
+      Connected
     </Container>
   );
 }

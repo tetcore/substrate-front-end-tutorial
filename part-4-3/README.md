@@ -1,13 +1,10 @@
-# Basic dapp tutorial repo
+# Basic DApp tutorial repo
 
-This repo contains the files obtained at the end of each part from the [dapp tutorial](https://substrate.dev/docs/en/tutorials/dapp/).
-To play with the dapp at any part, you can clone this repo and follow these steps:
+This repo contains the files obtained at the end the corresponding part of the [DApp tutorial](https://substrate.dev/docs/en/tutorials/basic-dapp/).
+To play with the DApp from this part, and assuming you have cloned the repo:
 
 ```bash
-git clone https://github.com/substrate-developer-hub/basic-dapp.git
-cd ./basic-dapp/<the_part_that_you_wish>;
+cd ./<part_you_want_to_test>
 yarn;
 yarn start;
 ```
-
-run `yarn-upgrade-all.sh` to upgrade all the dependancies of each part.

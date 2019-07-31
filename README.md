@@ -1,7 +1,7 @@
-# Basic dapp tutorial repo
+# Basic DApp tutorial repo
 
-This repo contains the files obtained at the end of each part from the [dapp tutorial](https://substrate.dev/docs/en/tutorials/dapp/).
-To play with the dapp at any part, you can clone this repo and follow these steps:
+This repo contains the files obtained at the end of each part from the [dapp tutorial](https://substrate.dev/docs/en/tutorials/basic-dapp/).
+To play with the DApp at any part, you can clone this repo and follow these steps:
 
 ```bash
 git clone https://github.com/substrate-developer-hub/basic-dapp.git

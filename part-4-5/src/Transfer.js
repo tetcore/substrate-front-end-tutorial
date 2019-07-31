@@ -13,7 +13,7 @@ export default function Transfer (props) {
   };
   const [formState, setFormState] = useState(initialState);
   const { addressTo, addressFrom, amount } = formState;
-  const fromPair = addressFrom && keyring.getPair(addressFrom);
+  const fromPair = !!addressFrom && keyring.getPair(addressFrom);
 
   // get the list of accounts we possess the private key for
   const keyringOptions = keyring.getPairs().map((account) => ({
