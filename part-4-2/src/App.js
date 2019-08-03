@@ -29,7 +29,7 @@ import 'semantic-ui-css/semantic.min.css'
 
   // new hook to get injected accounts
   useEffect(() => {
-    web3Enable('basic-dapp-tutorial')
+    web3Enable('substrate-front-end-tutorial')
     .then((extensions) => {
     // web3Account promise only resolves if there are accounts to inject
     web3Accounts()
