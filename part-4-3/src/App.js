@@ -1,5 +1,5 @@
 import { ApiPromise, WsProvider } from '@polkadot/api';
-import { isWeb3Injected, web3Accounts, web3Enable } from '@polkadot/extension-dapp';
+import { web3Accounts, web3Enable } from '@polkadot/extension-dapp';
 import keyring from '@polkadot/ui-keyring';
 import React, { useState, useEffect } from 'react';
 import { Container, Dimmer, Loader} from 'semantic-ui-react';
@@ -31,17 +31,19 @@ import 'semantic-ui-css/semantic.min.css'
   useEffect(() => {
     web3Enable('substrate-front-end-tutorial')
     .then((extensions) => {
-    // web3Account promise only resolves if there are accounts to inject
+    // web3Accounts promise returns an array of accounts
+    // or an empty array if our user doesn't have an extension or hasn't given the
+    // access to any of their account.
     web3Accounts()
         .then((accounts) => {
-        // add the source to the name to avoid confusion
-        return accounts.map(({ address, meta }) => ({
-            address,
-            meta: {
-            ...meta,
-            name: `${meta.name} (${meta.source})`
-            }
-        }));
+          // add the source to the name to avoid confusion
+          return accounts.map(({ address, meta }) => ({
+              address,
+              meta: {
+              ...meta,
+              name: `${meta.name} (${meta.source})`
+              }
+          }));
         })
         // load our keyring with the newly injected accounts
         .then((injectedAccounts) => {
@@ -50,10 +52,6 @@ import 'semantic-ui-css/semantic.min.css'
         .catch(console.error);
     })
     .catch(console.error);
-
-    // if there is no injection, or the user hasn't accepted it,
-    // load any local account
-    !isWeb3Injected && loadAccounts();
   }, []);
 
   const loadAccounts = (injectedAccounts) => {
