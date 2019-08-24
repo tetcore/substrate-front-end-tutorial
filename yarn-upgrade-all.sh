@@ -4,5 +4,5 @@ do
    echo -e "\nInstall and upgrade $i\n";
    cd $i;
    yarn;
-   yarn upgrade;
+   yarn upgrade --latest;
 done

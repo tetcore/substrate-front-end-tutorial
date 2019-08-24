@@ -14,7 +14,7 @@ import 'semantic-ui-css/semantic.min.css'
   useEffect(() => {
     const provider = new WsProvider(WS_PROVIDER);
 
-    ApiPromise.create(provider)
+    ApiPromise.create({provider})
       .then((api) => {
         setApi(api);
         api.isReady.then(() => setApiReady(true));
