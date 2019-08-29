@@ -1059,18 +1059,18 @@
     "@polkadot/types" "^0.90.0-beta.43"
     "@polkadot/util-crypto" "^1.1.1"
 
-"@polkadot/extension-dapp@^0.7.0-beta.1":
-  version "0.7.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@polkadot/extension-dapp/-/extension-dapp-0.7.0-beta.1.tgz#f3b403716a6cefa2c6c5dfdb5099891a270e67e0"
-  integrity sha512-OKOTp5U8s2h0SCxPkJ+zB0cqPaR3kp88y4EmK3/DYeN0umCRZVJwumPEg3//bhqSycm4FIXVQEt9UW7IiwygtQ==
+"@polkadot/extension-dapp@^0.9.0-beta.1":
+  version "0.9.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@polkadot/extension-dapp/-/extension-dapp-0.9.0-beta.1.tgz#7c8410f2bc97a64fc22e1fea1ca4e0262ed03ba8"
+  integrity sha512-WVUKntzv2JH60v++IlU97SXJxzlEAU6VfSFTePn1bfBTfipOk1DlJinSP2qRzVwgdbSLzxlWTV+hC/jRbqne2Q==
   dependencies:
     "@babel/runtime" "^7.5.5"
-    "@polkadot/extension-inject" "^0.7.0-beta.1"
+    "@polkadot/extension-inject" "^0.9.0-beta.1"
 
-"@polkadot/extension-inject@^0.7.0-beta.1":
-  version "0.7.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@polkadot/extension-inject/-/extension-inject-0.7.0-beta.1.tgz#ff1bc3ea5b21e4ef1dc7041fa88e1e1eccba3f0c"
-  integrity sha512-hBF0HsWehBmnGCqQGl6ecHoLlnVs+Ud8s9adC8VoPSJgb8EopeQk/1Bko5cu/hiH6qmomISnKv4U1KRyIOz8iQ==
+"@polkadot/extension-inject@^0.9.0-beta.1":
+  version "0.9.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@polkadot/extension-inject/-/extension-inject-0.9.0-beta.1.tgz#7ee884b5b3922cd7538403bd14eb78c2d609e443"
+  integrity sha512-1pfcS+npyQJI5jA1pAlU1SE2h8Rja7LIvONn0Yj/6dNHBS+/aRsb7JJPjVt0fWBIy7xO0IvrYK1RiGY3mjCPeg==
   dependencies:
     "@babel/runtime" "^7.5.5"
 

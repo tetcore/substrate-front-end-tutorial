@@ -1,0 +1,9 @@
+#!/bin/bashhttp://localhost:3000/
+for i in $(echo ./part-*)
+do
+   echo -e "\nInstall and upgrade $i\n";
+   cd $i;
+   yarn;
+   yarn upgrade --latest;
+done
+http://localhost:3000/
