@@ -3,6 +3,6 @@ for i in $(echo ./part-*)
 do
    echo -e "\nInstall and upgrade $i\n";
    cd $i;
-   yarn upgrade @polkadot/api@beta;
-   cd ..
+   yarn;
+   yarn upgrade --latest;
 done
