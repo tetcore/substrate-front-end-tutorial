@@ -11,7 +11,7 @@ export default function Transfer (props) {
   };
   const [formState, setFormState] = useState(initialState);
   const { addressTo, addressFrom, amount } = formState;
-  
+
   // get the list of accounts we possess the private key for
   const keyringOptions = keyring.getPairs().map((account) => ({
     key: account.address,
@@ -61,7 +61,6 @@ export default function Transfer (props) {
             selection
             state='addressFrom'
             options={keyringOptions}
-            value={addressFrom}
           />
         </Form.Field>
         <Form.Field>
@@ -72,7 +71,6 @@ export default function Transfer (props) {
             placeholder='address'
             state='addressTo'
             type='text'
-            value={addressTo}
           />
         </Form.Field>
         <Form.Field>
@@ -82,7 +80,6 @@ export default function Transfer (props) {
             onChange={onChange}
             state='amount'
             type='number'
-            value={amount}
           />
         </Form.Field>
         <Form.Field>
