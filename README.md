@@ -4,8 +4,8 @@ This repo contains the files obtained at the end of each part from the [dapp tut
 To play with the DApp at any part, you can clone this repo and follow these steps:
 
 ```bash
-git clone https://github.com/substrate-developer-hub/substrate-front-end.git
-cd ./substrate-front-end/<the_part_that_you_wish>;
+git clone https://github.com/substrate-developer-hub/substrate-front-end-tutorial.git
+cd ./substrate-front-end-tutorial/<the_part_that_you_wish>;
 yarn;
 yarn start;
 ```
