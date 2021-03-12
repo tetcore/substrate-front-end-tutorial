@@ -1,4 +1,4 @@
-# Substrate front-end tutorial repo
+# Tetcore front-end tutorial repo
 
 This repo contains the files obtained at the end of each part from the [dapp tutorial](https://substrate.dev/docs/en/tutorials/substrate-front-end/).
 To play with the DApp at any part, you can clone this repo and follow these steps:
